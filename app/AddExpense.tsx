@@ -23,7 +23,7 @@ const AddExpense = () => {
     }
 
     try {
-      await axios.post('http://192.168.29.73:8080/api/expenses', {
+      await axios.post('https://expensemanager_backend.up.railway.app/api/expenses', {
         amount: Number(amount),
         amountType,
         desc: String(desc),

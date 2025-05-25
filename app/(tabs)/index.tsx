@@ -28,7 +28,7 @@ export default function HomeScreen() {
 
   useFocusEffect(
     useCallback(() => {
-      axios.get<Expense[]>('http://192.168.29.73:8080/api/expenses')
+      axios.get<Expense[]>('https://expensemanager_backend.up.railway.app/api/expenses')
         .then(res => {
           setExpenses(res.data);
           calculateTotals(res.data);
